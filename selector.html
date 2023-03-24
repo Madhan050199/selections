@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<head>
+<title>Types of selectors</title>
+</head>
+<style>
+.sample p{
+font-size:20px;
+}
+.sample >p{
+color:blue;
+}
+.sample2 + p{
+background-color:blue;
+}
+.sample1 +p{
+background-color:yellow;
+}
+
+.sample1 ~p{
+background-color:#9B32EE
+
+}
+.sample2 ~p{
+background-color:#EE326B;
+
+}
+button{
+width:150px;
+height:50px;
+font-size:20px;
+
+}
+
+button:link{
+color:green;
+}
+button:hover{
+background-color:#EE326B;
+font-size:25px;
+color:white;
+}
+button:active{
+background-color:#D7EE32;
+color:black;
+}
+
+.sample1 p:first-child{
+color:red;
+}
+.sample1 p:last-child{
+color:#32EE6E;
+}
+.sample2 p:nth-child(3){
+background-color:#EECC32;
+}
+.sample p:nth-child(1){
+background-color:#EECC32;
+}
+
+.madhan p{
+color:blue;
+}
+.madhan>p{
+background-color:red;
+width:200px;
+}
+.madhan ul + li +li{
+font-size:50px;
+}
+.madhan ul ~ li{
+font-size:50px;
+}
+
+.madhan p:first-child{
+background-color:yellow;
+
+}
+
+.madhan ul li:first-child{
+font-style:italic;
+}
+.madhan b p:nth-child(2){
+color:red;
+}
+
+.madhan h1::before{
+content:"hi ";
+}
+
+.madhan p::after{
+content:" hi";
+}
+.madhan li::marker{
+font-size:35px;
+color:#EECC32;
+}
+.madhan p::first-letter{
+font-size:35px;
+color:#EECC32;
+}
+
+.madhan ul li::first-line{
+font-size:35px;
+color:blue;
+}
+::selection{
+background-color:#EE6404;
+color:white;
+
+}
+
+</style>	
+<body>
+<div class="sample">
+<div class="sample1">
+<p>paragraph1</p>
+<p>paragraph2</p>
+<div class="sample2">
+<p>inner paragraph1</p>
+<p> inner paragraph2</p>
+<p> inner paragraph3</p>
+<p> inner paragraph4</p>
+</div>
+<p>paragraph3</p>
+<p>paragraph4</p>
+<p>paragraph5</p>
+</div>
+<p>paragraph6</p>
+<p>paragraph7</p>
+<p>paragraph8</p>
+
+<button><font>click here</font></button>
+
+</div>
+</body>
+</html>
+
+
+<section class="madhan">
+<h1>madhan</h1>
+<P>iam madhan from chennai 1</p>
+<P>iam madhan from chennai 2</p>
+<ul>
+<li>car</li>
+<li>bus</li>
+<li>bike</li>
+</ul>
+<li>auto</li>
+<li>jeep</li>
+
+<b><p>dummy paragraph</p>
+<p>dummy paragraph</p>
+</b>
+
+</section>
+
+
+
+</body>
+<html>
